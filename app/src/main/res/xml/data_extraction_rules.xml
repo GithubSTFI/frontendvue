@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data-extraction-rules>
+    <cloud-backup>
+        <!-- Inclure les préférences utilisateur -->
+        <include domain="sharedpref" path="user_settings.xml" />
+
+        <!-- Inclure les bases de données importantes -->
+        <include domain="database" path="app_data.db" />
+
+        <!-- Inclure les fichiers personnels créés par l'utilisateur -->
+        <include domain="file" path="user_files/" />
+
+        <!-- Exclure les caches -->
+        <exclude domain="file" path="cache/" />
+
+        <!-- Exclure les téléchargements volumineux -->
+        <exclude domain="file" path="downloads/" />
+    </cloud-backup>
+
+    <device-transfer>
+        <!-- Inclure toutes les données importantes pour le transfert -->
+        <include domain="sharedpref" path="user_settings.xml" />
+        <include domain="database" path="app_data.db" />
+        <include domain="file" path="user_files/" />
+
+        <!-- Exclure les caches pour éviter de transférer des données inutiles -->
+        <exclude domain="file" path="cache/" />
+    </device-transfer>
+</data-extraction-rules>
