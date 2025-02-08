@@ -47,7 +47,7 @@
 
                         <androidx.constraintlayout.widget.ConstraintLayout
                             android:layout_width="155dp"
-                            android:layout_height="35dp"
+                            android:layout_height="45dp"
                             android:background="@drawable/round"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
@@ -63,6 +63,7 @@
                                 app:layout_constraintTop_toTopOf="parent">
 
                                 <EditText
+                                    android:hint="rechercher"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent" />
 
@@ -323,6 +324,7 @@
                         android:layout_height="wrap_content">
 
                         <androidx.cardview.widget.CardView
+                            android:id="@+id/btnOuvrir1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             app:cardBackgroundColor="#730809"
@@ -420,6 +422,7 @@
                         </androidx.cardview.widget.CardView>
 
                         <androidx.cardview.widget.CardView
+                            android:id="@+id/btnOuvrir2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             app:cardBackgroundColor="#730809"
@@ -530,6 +533,7 @@
                         android:layout_height="wrap_content">
 
                         <androidx.cardview.widget.CardView
+                            android:id="@+id/btnOuvrir3"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             app:cardBackgroundColor="#730809"
@@ -635,6 +639,7 @@
                         </androidx.cardview.widget.CardView>
 
                         <androidx.cardview.widget.CardView
+                            android:id="@+id/btnOuvrir4"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
 
@@ -757,7 +762,7 @@
             <com.google.android.material.bottomnavigation.BottomNavigationView
                 android:id="@+id/bottom_navigation"
                 android:layout_width="match_parent"
-                android:layout_height="52dp"
+                android:layout_height="102dp"
 
 
                 android:layout_gravity="bottom"

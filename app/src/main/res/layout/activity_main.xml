@@ -90,7 +90,7 @@
 
                     <androidx.cardview.widget.CardView
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="55dp"
 
 
                         android:layout_marginTop="5dp"
@@ -100,8 +100,9 @@
                         app:cardBackgroundColor="@color/black_70">
 
                         <EditText
+                            android:id="@+id/editTextEmail"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:padding="9dp"
                             android:textSize="16dp"
                             android:text="entrez votre login"
@@ -131,7 +132,7 @@
 
                     <androidx.cardview.widget.CardView
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="55dp"
 
 
                         android:layout_marginTop="5dp"
@@ -141,8 +142,9 @@
                         app:cardBackgroundColor="@color/black_70">
 
                         <EditText
+                            android:id="@+id/editTextPassword"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:padding="9dp"
                             android:textSize="16dp"
                             android:text="entrez votre mot de passe"
@@ -154,6 +156,7 @@
 
 
                     <androidx.cardview.widget.CardView
+                        android:id="@+id/connectUser"
                         android:layout_width="match_parent"
                         android:layout_height="60dp"
 
@@ -177,11 +180,33 @@
 
                     </androidx.cardview.widget.CardView>
 
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/inscriptionBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+
+
+                        app:cardCornerRadius="15dp"
+                        android:layout_marginTop="65dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        app:cardBackgroundColor="@color/black">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="9dp"
+                            android:textSize="16dp"
+                            android:text="inscription"
+                            android:layout_gravity="center"
+                            android:textColor="@color/white"  />
+
+
+
+                    </androidx.cardview.widget.CardView>
+
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-
