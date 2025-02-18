@@ -3,6 +3,7 @@ package com.example.myapplication;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MenuItem;
 import android.widget.Toast;
 
@@ -36,6 +37,9 @@ public class details extends AppCompatActivity {
         CardView btnAjouterCommande = findViewById(R.id.btnAjouterCommande);
 
 
+        String id = getIntent().getStringExtra("id");
+
+        Log.d("detailsActivity", "ID reçu : " + id);
         String client = getIntent().getStringExtra("client");
         String produit = getIntent().getStringExtra("produit");
         int quantite = getIntent().getIntExtra("quantite", 0);
@@ -43,7 +47,7 @@ public class details extends AppCompatActivity {
 
         // Création d'un objet Commande avec les données reçues
         String idCommande = UUID.randomUUID().toString();
-        Commande commande = new Commande(idCommande, client, produit, quantite, prixTotal);
+        Commande commande = new Commande(id, client, produit, quantite, prixTotal);
 
         btnAjouterCommande.setOnClickListener(v -> ajouterCommande(commande));
 
@@ -59,6 +63,9 @@ public class details extends AppCompatActivity {
                     return true;
                 } else if (id == R.id.page_2) {
                     startActivity(new Intent(details.this, liste.class));
+                    return true;
+                } else if (id == R.id.page_3) {
+                    startActivity(new Intent(details.this, NewCommandeActivity.class));
                     return true;
                 }
 

@@ -69,6 +69,9 @@ public class liste extends AppCompatActivity {
                 } else if (id == R.id.page_2) {
                     startActivity(new Intent(liste.this, liste.class));
                     return true;
+                }else if (id == R.id.page_3) {
+                    startActivity(new Intent(liste.this, NewCommandeActivity.class));
+                    return true;
                 }
 
 
